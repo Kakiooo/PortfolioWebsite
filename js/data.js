@@ -20,7 +20,7 @@ const PROJECTS = {
       platform: ["PC", "Cross-platform"],
       roles: ["Developer"],
       skills: ["#Unity", "#C#", "#Photon Fusion", "#Character Controller", "#Weapon System", "#Editor Tooling"],
-      links: {},
+      links: { steam: "https://store.steampowered.com/app/5256090/Kaiju_Corp/" },
       detail: {
         overview: "Kaiju Corp is a cross-platform multiplayer game built with Photon Fusion. As one of a four-person team, we took it from concept to a fully playable build in under three months. I focused on the PC player experience: the Three Cs (character, camera and controls), the weapon system, UI implementation, and the networking that keeps PC players in sync. I also built a custom Unity tool to streamline the art implementation pipeline.",
         contribution: [

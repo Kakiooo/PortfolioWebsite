@@ -827,6 +827,35 @@ h2 { font-size: clamp(1.3rem, 3vw, 1.9rem); }
   gap: 0.5rem;
   font-size: 0.85rem;
 }
+.detail-external-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+.detail-link-btn {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--ink);
+  text-decoration: none;
+  background: var(--amber);
+  border: 3px solid var(--ink);
+  border-radius: var(--radius-sm);
+  box-shadow: 3px 3px 0 var(--ink);
+  padding: 8px 16px;
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+}
+.detail-link-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 var(--ink);
+}
+.detail-link-btn:active {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0 var(--ink);
+}
 .meta-label { font-weight: 700; }
 .meta-value {
   font-family: var(--font-mono);

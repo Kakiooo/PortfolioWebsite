@@ -142,6 +142,14 @@ const App = (() => {
             <span class="meta-label">Platform:</span>
             ${p.platform.map(pl => `<span class="meta-value">${pl}</span>`).join("")}
           </div>
+          ${p.links?.steam ? `
+          <div class="detail-external-links">
+            <a href="${p.links.steam}" target="_blank" rel="noopener" class="detail-link-btn steam-btn">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" style="vertical-align:-3px;margin-right:8px"><path fill="currentColor" d="M12 2C6.5 2 2 6.5 2 12c0 4.6 3.1 8.5 7.3 9.6l2.1-3c-.5-.3-.8-.9-.8-1.5 0-1 .8-1.8 1.8-1.8l1.8-2.6c0-2 1.6-3.7 3.6-3.7s3.6 1.6 3.6 3.7-1.6 3.7-3.6 3.7c-.1 0-.2 0-.3 0l-2.5 1.8c0 1.4-1.1 2.6-2.5 2.6-1.2 0-2.2-.8-2.5-2L7.3 20C9.1 21.3 10.4 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm5.8 10.2c-1.3 0-2.4-1.1-2.4-2.5s1.1-2.5 2.4-2.5 2.4 1.1 2.4 2.5-1 2.5-2.4 2.5zM9.5 19.2l-1.3-.6c.2.5.6.8 1.2.8.7 0 1.3-.6 1.3-1.4 0-.8-.6-1.4-1.3-1.4-.2 0-.4 0-.5.1l1.3.6c.6.2.8.9.6 1.4-.2.5-.9.8-1.3.5z"/></svg>
+              View on Steam
+            </a>
+          </div>
+          ` : ""}
         </div>
         ${media.length ? `
         <div class="detail-media">
